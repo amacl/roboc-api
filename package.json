@@ -1,0 +1,31 @@
+{
+  "name": "@amacl/roboc-api",
+  "version": "1.0.0",
+  "description": "package based on express for api",
+  "author": "Pablo Rebolledo Acosta",
+  "email": "pablo.rebolledo.acosta@gmail.com",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "umd:main": "dist/index.umd.js",
+  "module": "dist/index.mjs",  
+  "source": "src/index.js",  
+  "scripts": {
+    "local": "nodemon -r esm",
+    "test": "jest --coverage --detectOpenHandles",
+    "build": "microbundle"    
+  },
+  "repository": { "url": "git@github.com:amacl/roboc-api.git"},
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "esm": "^3.2.25",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.9.5",
+    "babel-jest": "^25.3.0",
+    "jest": "^25.3.0",
+    "microbundle": "^0.11.0",
+    "supertest": "^4.0.2"
+  }
+}
